@@ -37,5 +37,10 @@ The following files contain known issues that you need to address:
 -   Ensure the code is robust and handles edge cases appropriately.
 -   Pay attention to performance and best practices (e.g., proper dependency arrays, error handling).
 
-Good luck!
+## Functionality Which contains bugs
+- Searching
+- Department Filtering
+- Pagination
+- Employee Status Toggle
 
+Good luck!

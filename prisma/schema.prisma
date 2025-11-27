@@ -20,12 +20,18 @@ model User {
 }
 
 model Employee {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  id         String         @id @default(auto()) @map("_id") @db.ObjectId
   name       String
   email      String
   role       String
   department String
-  createdAt  DateTime @default(now()) @map("created_at")
+  status     EmployeeStatus @default(ACTIVE)
+  createdAt  DateTime       @default(now()) @map("created_at")
 
   @@map("employees")
+}
+
+enum EmployeeStatus {
+  ACTIVE
+  INACTIVE
 }
