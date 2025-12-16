@@ -16,7 +16,7 @@
 		"db:migrate": "prisma migrate dev",
 		"db:deploy": "prisma migrate deploy",
 		"db:reset": "prisma migrate reset",
-		"db:seed": "ts-node --transpile-only -O '{\"module\":\"commonjs\", \"moduleResolution\":\"node\"}' scripts/seed.ts",
+		"db:seed": "ts-node --transpile-only -O \"{\\\"module\\\":\\\"commonjs\\\", \\\"moduleResolution\\\":\\\"node\\\"}\" scripts/seed.ts",
 		"test": "jest --json --outputFile=test-results.json --coverage",
 		"test:watch": "jest --watch"
 	},
