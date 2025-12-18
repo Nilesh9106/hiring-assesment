@@ -15,7 +15,7 @@ An "Employees" page that lists employees with the following functionality:
     ```bash
     pnpm install
     ```
-2.  Seed the database (MongoDB):
+2.  Generate the schema (MongoDB):
     ```bash
     pnpm db:generate
     ```
@@ -37,7 +37,7 @@ The following files contain known issues that you need to address:
 
 -   `app/api/employees/route.ts`: API route for fetching employees.
 -   `hooks/useEmployees.ts`: Custom hook for managing employee data fetching.
--   `app/employees/page.tsx`: The main page component.
+-   `app/page.tsx`: The main page component.
 
 ## Instructions
 -   Identify the bugs in the frontend and backend.
