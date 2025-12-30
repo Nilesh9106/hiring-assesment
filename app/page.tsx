@@ -19,7 +19,7 @@ export default function EmployeesPage() {
 
 	useEffect(() => {
 		setPage(1);
-	}, [search]);
+	}, [search, department]);
 
 	const departments = ['Engineering', 'Sales', 'Marketing', 'HR', 'Finance', 'Legal'];
 
@@ -34,7 +34,7 @@ export default function EmployeesPage() {
 						onChange={(e) => setSearch(e.target.value)}
 						className='w-full md:w-[300px]'
 					/>
-					<Select value={department} onValueChange={setDepartment}>
+					<Select value={department || 'all'} onValueChange={(value) => setDepartment(value === 'all' ? '' : value)}>
 						<SelectTrigger className='w-full md:w-[200px]'>
 							<SelectValue placeholder='All Departments' />
 						</SelectTrigger>
