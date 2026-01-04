@@ -1,6 +1,5 @@
 {
 	"name": "Next.js Template Dev Container",
-	"image": "mcr.microsoft.com/devcontainers/node:20",
 	"customizations": {
 		"vscode": {
 			"extensions": ["esbenp.prettier-vscode", "prisma.prisma", "dbaeumer.vscode-eslint"],
