@@ -43,3 +43,4 @@ logs/*
 cypress/screenshots
 cypressResult.json
 test-results.json
+dev.db

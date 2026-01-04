@@ -11,26 +11,7 @@ An "Employees" page that lists employees with the following functionality:
 -   Toggle employee status (active/inactive)
 
 ## Setup
-1.  Install dependencies:
-    ```bash
-    pnpm install
-    ```
-2.  Generate the schema (MongoDB):
-    ```bash
-    pnpm db:generate
-    ```
-3.  Add the database URL to the .env file:
-    ```bash
-    DATABASE_URL=mongodb://localhost:27017/employees # Replace with your MongoDB URL
-    ```
-4.  Seed the database (MongoDB):
-    ```bash
-    pnpm db:seed
-    ```
-5.  Start the development server:
-    ```bash
-    pnpm dev
-    ```
+- It will be automatically setup when you open the project in the dev container.
 
 ## Files of Interest
 The following files contain known issues that you need to address:

@@ -17,9 +17,18 @@ async function main() {
 
 		console.log(`Found ${employees.length} employees to seed.`);
 
+		// Clear existing data first
+		console.log('Clearing existing data...');
+		await prisma.employee.deleteMany({});
+
+		// Format employees for SQLite - remove the MongoDB ObjectId and let SQLite generate integer IDs
 		const formattedEmployees = employees.map((emp: any) => ({
-			...emp,
-			createdAt: emp.createdAt ? new Date(emp.createdAt) : undefined,
+			name: emp.name,
+			email: emp.email,
+			role: emp.role,
+			department: emp.department || '', // Handle empty departments
+			status: 'ACTIVE', // Set default status
+			createdAt: emp.createdAt ? new Date(emp.createdAt) : new Date(),
 		}));
 
 		console.log('Seeding database...');
