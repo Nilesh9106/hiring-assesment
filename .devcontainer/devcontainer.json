@@ -17,17 +17,6 @@
 			}
 		}
 	},
-	"forwardPorts": [3000, 5555],
-	"portsAttributes": {
-		"3000": {
-			"label": "Next.js App",
-			"onAutoForward": "notify"
-		},
-		"5555": {
-			"label": "Prisma Studio",
-			"onAutoForward": "notify"
-		}
-	},
 	"postCreateCommand": "chmod +x scripts/setup-env.sh && scripts/setup-env.sh && pnpm install && pnpm db:setup",
 	"postStartCommand": "echo 'Dev container is ready! Run pnpm dev to start the development server.'",
 	"remoteEnv": {
