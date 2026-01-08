@@ -13,7 +13,7 @@ An "Employees" page that lists employees with the following functionality:
 ## Setup
 - It will be automatically setup when you open the project in the dev container if not done already run below command to setup the project.
 ```bash
-pnpm setup
+pnpm run setup
 ```
 
 ## Files of Interest
